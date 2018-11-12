@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" ></script>
+</head>
+
+<body class="bg">
+    <br><br>
+    <div class="container panelBody">
+      <h1>Calculator<h1>
+        <input type="text" id="inputData" class="inputCss form-control" />
+        <input type="text" id="result" class="resultCss form-control" placeholder="result here" readonly />
+        <div class="rowPad">
+            <button class="btn btn-primary" onclick="getData('1')">1</button>
+            <button class="btn btn-primary" onclick="getData('2')">2</button>
+            <button class="btn btn-primary" onclick="getData('3')">3</button>
+            <button class="btn btn-primary" onclick="getData('+')">+</button>
+            <button class="btn btn-primary" onclick="getData('(')">(</button>
+        </div>
+        <div class="rowPad">
+            <button class="btn btn-primary" onclick="getData('4')">4</button>
+            <button class="btn btn-primary" onclick="getData('5')">5</button>
+            <button class="btn btn-primary" onclick="getData('6')">6</button>
+            <button class="btn btn-primary" onclick="getData('-')">-</button>
+            <button class="btn btn-primary" onclick="getData(')')">)</button>
+        </div>
+        <div class="rowPad">
+            <button class="btn btn-primary" onclick="getData('7')">7</button>
+            <button class="btn btn-primary" onclick="getData('8')">8</button>
+            <button class="btn btn-primary" onclick="getData('9')">9</button>
+            <button class="btn btn-primary" onclick="getData('*')">*</button>
+            <button class="btn btn-primary" onclick="getData('%')">%</button>
+        </div>
+        <div class="rowPad">
+            <button class="btn btn-primary" onclick="getData('0')">0</button>
+            <button class="btn btn-primary" onclick="getData('/')">/</button>
+            <button class="btn btn-primary" onclick="getData('**')">^</button>
+        </div>
+        <div class="rowPad">
+            <button tyepe="submit" class="btn btn-info" onclick="inputValidation()">result</button>
+            <button class="btn btn-info" onclick="clearAll()">clear all</button>
+        </div>
+    </div>
+</body>
+
+</html>
